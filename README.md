@@ -1,6 +1,6 @@
 # Hangman
 
-<p align="center"><img src=https://github.com/connorjchen/Hangman/hangmanIcon.ico width=250 /></p>
+<p align="center"><img src=https://github.com/connorjchen/Hangman/blob/master/hangmanLogo.ico width=250 /></p>
 
 ### Description
 
