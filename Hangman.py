@@ -5,11 +5,8 @@ pygame.mixer.pre_init(44100, 16, 2)
 
 def find_data_file(filename):
     if getattr(sys, 'frozen', False):
-        # The application is frozen
         datadir = os.path.dirname(sys.executable)
     else:
-        # The application is not frozen
-        # Change this bit to match where you store your data files:
         datadir = os.path.dirname(__file__)
     return os.path.join(datadir, filename)
 
@@ -20,7 +17,7 @@ countryList = ['Australia', 'China', 'Russia', 'Brazil', 'Canada', 'Italy', 'Spa
                'Mexico', 'France', 'Bangladesh', 'India', 'Argentina']
 
 fruitList = ['Apple', 'Grape', 'Orange', 'Mango', 'Coconut', 'Banana', 'Kiwi', 'Pear',
-             'Lime', 'Lemon', 'Blueberry', 'Blackberry', 'Watermelon', 'Strawberry', 'Passionfruit']
+             'Lime', 'Lemon', 'Blueberry', 'Blackberry', 'Watermelon', 'Strawberry']
 
 colorList = ['Turquoise', 'Blue', 'Red', 'Yellow', 'Green', 'Black', 'White', 'Brown', 'Pink',
              'Purple', 'Maroon', 'Grey', 'Gold', 'Silver']
@@ -50,7 +47,6 @@ inputHeader = 'Guess Letter/Word:'
 outputHeader = 'Feedback:'
 currentWordHeader = 'Current Word:'
 usedLettersHeader = 'Used Letters:'
-#watermark = 'Connor J. Chen'
 currentWordList = ''
 inputText = ''
 outputText = ''
@@ -245,7 +241,6 @@ while True:
     pygame.draw.rect(win, pygame.Color('indianred1'), fruitBtn)
     pygame.draw.rect(win, pygame.Color('indianred1'), colorBtn)
     pygame.draw.rect(win, pygame.Color('indianred1'), stateBtn)
- #   pygame.draw.rect(win, pygame.Color('skyblue'), soundBtn)
 
 
     inputSurface = baseFont.render(inputText,True, (255,255,255))
@@ -263,7 +258,6 @@ while True:
     fruitHeaderSurface = headerFont.render(fruitHeader, True, (0, 0, 0))
     colorHeaderSurface = headerFont.render(colorHeader, True, (0, 0, 0))
     stateHeaderSurface = headerFont.render(stateHeader, True, (0, 0, 0))
-#    watermarkSurface = watermarkFont.render(watermark, True, pygame.Color('gray27'))
 
     win.blit(inputSurface,(inputRect.x + 5, inputRect.y + 30))
     win.blit(inputHeaderSurface, (inputRect.x + 5, inputRect.y + 5))
@@ -283,7 +277,6 @@ while True:
     win.blit(colorHeaderSurface, (colorBtn.x + 47, colorBtn.y + 15))
     win.blit(stateHeaderSurface, (stateBtn.x + 47, stateBtn.y + 15))
     win.blit(soundLogo, (screenWidth - 25, 2))
-#    win.blit(watermarkSurface, (screenWidth - 110, screenHeight - 25))
 
     pygame.display.flip()
     clock.tick(60)
