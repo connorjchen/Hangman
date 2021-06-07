@@ -21,13 +21,3 @@ There are few feelings as frustrating as going to the laundry room with your ham
   <img src="https://github.com/joshuakguo/culaundry-ios/blob/689d1aa0f8b7536146e49c93962674fbec938aaf/Assets/gif2.gif" width="300" />
   <img src="https://github.com/joshuakguo/culaundry-ios/blob/689d1aa0f8b7536146e49c93962674fbec938aaf/Assets/gif1.gif" width="300" /> 
 </p>
-
-### Hack Challenge Requirements
-
-- At Least 4 Endpoints (aka routes)
-- API Specification (api.md)
-- Relation Database Schema (raw SQL, 2 tables, relationships)
-- Heroku Deployment
-
-### Frontend for CULaundry
-Created by Joshua Guo (jcg294) which can be viewed [here](https://github.com/joshuakguo/culaundry-ios).
