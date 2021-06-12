@@ -9,6 +9,5 @@ Simple hangman game coded in python using pygame
 ### Demo
 
 <p float="left">
-  <img src="linkhere" width="300" />
-  <img src="linkhere" width="300" /> 
+  <img src="https://github.com/connorjchen/Hangman/blob/master/Assets/HangmanDemo.gif" width="300" />
 </p>
