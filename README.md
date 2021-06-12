@@ -8,6 +8,6 @@ Hangman game, complete with graphics and audio cues, created solely by Connor Ch
 
 ### Demo
 
-<p float="left">
+<p align="center">
   <img src="https://github.com/connorjchen/Hangman/blob/master/Assets/HangmanDemo.gif" width="800" />
 </p>
